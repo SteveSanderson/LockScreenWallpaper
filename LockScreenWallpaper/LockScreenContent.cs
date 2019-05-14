@@ -29,7 +29,7 @@ namespace LockScreenWallpaper
                     && buf[0] == 0xff
                     && buf[1] == 0xd8
                     && buf[2] == 0xff
-                    && buf[3] == 0xe0;
+                    && (buf[3] == 0xe0 || buf[3] == 0xe1);
             }
         }
 
